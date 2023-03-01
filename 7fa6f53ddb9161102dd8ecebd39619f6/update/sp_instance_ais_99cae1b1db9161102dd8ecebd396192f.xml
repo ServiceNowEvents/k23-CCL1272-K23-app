@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_ais">
+    <sp_instance_ais action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ai_search_source_filter/>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <disable_all_suggestions>false</disable_all_suggestions>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <placeholder/>
+        <roles/>
+        <search_application/>
+        <search_results_configuration/>
+        <short_description/>
+        <size>lg</size>
+        <sp_column display_value="1">5dcae1b1db9161102dd8ecebd396192c</sp_column>
+        <sp_widget display_value="Homepage Search">200fbd96cb20020000f8d856634c9ca1</sp_widget>
+        <spell_check_font_size>xl</spell_check_font_size>
+        <sys_class_name>sp_instance_ais</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-01 09:39:43</sys_created_on>
+        <sys_id>99cae1b1db9161102dd8ecebd396192f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Welcome to Hammerbarn</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
+        <sys_update_name>sp_instance_ais_99cae1b1db9161102dd8ecebd396192f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-01 10:34:06</sys_updated_on>
+        <title>Welcome to Hammerbarn</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"typeahead_search": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_ais>
+    <sys_translated_text action="delete_multiple" query="documentkey=99cae1b1db9161102dd8ecebd396192f"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</claim_owner_scope>
+        <claim_timestamp>1869cbc85aa0000001</claim_timestamp>
+        <metadata_update_name>sp_instance_ais_99cae1b1db9161102dd8ecebd396192f</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Hammerbarn</previous_claim_name>
+        <previous_claim_scope>7fa6f53ddb9161102dd8ecebd39619f6</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-01 10:34:06</sys_created_on>
+        <sys_id>4637717ddb9161102dd8ecebd3961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-01 10:34:06</sys_updated_on>
+    </sys_claim>
+</record_update>
