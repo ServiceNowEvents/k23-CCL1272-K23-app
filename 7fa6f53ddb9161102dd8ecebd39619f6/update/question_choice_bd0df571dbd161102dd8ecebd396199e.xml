@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Order type">17ecf571dbd161102dd8ecebd3961999</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-01 10:59:50</sys_created_on>
+        <sys_id>bd0df571dbd161102dd8ecebd396199e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delivery</sys_name>
+        <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
+        <sys_update_name>question_choice_bd0df571dbd161102dd8ecebd396199e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-01 10:59:50</sys_updated_on>
+        <text>Delivery</text>
+        <value>delivery</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=bd0df571dbd161102dd8ecebd396199e"/>
+</record_update>
