@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Hammerbarn Order">48dfa1b5db9161102dd8ecebd39619e4</sc_cat_item>
+        <sc_category display_value="Tools">6e8a39fddb9161102dd8ecebd3961972</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-01 21:52:17</sys_created_on>
+        <sys_id>dc72584adb5961102dd8ecebd396190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tools.Hammerbarn Order</sys_name>
+        <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
+        <sys_update_name>sc_cat_item_category_dc72584adb5961102dd8ecebd396190a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-01 21:52:17</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

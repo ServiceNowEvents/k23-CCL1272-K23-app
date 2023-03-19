@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="DELETE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"subflows":[],"stages":{},"ends":["28a5fa56dbdda110d842b8e2f3961912"]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Legacy">007c2f021b020100adca1e094f0713b4</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>9ca5fa56dbdda110d842b8e2f3961910,5ea5fa56dbdda110d842b8e2f39619bc,73b53e56dbdda110d842b8e2f39619fa,ebe5fa56dbdda110d842b8e2f39619ed,28a5fa56dbdda110d842b8e2f3961912</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>9ca5fa56dbdda110d842b8e2f3961910,5ea5fa56dbdda110d842b8e2f39619bc,73b53e56dbdda110d842b8e2f39619fa,ebe5fa56dbdda110d842b8e2f39619ed,28a5fa56dbdda110d842b8e2f3961912</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Service Request</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">9ca5fa56dbdda110d842b8e2f3961910</start>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:23:45</sys_created_on>
+        <sys_id>30753a56dbdda110d842b8e2f39619bf</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:25:19</sys_updated_on>
+        <table>sc_request</table>
+        <timezone/>
+        <validated>false</validated>
+        <workflow display_value="Service Request">d8a53a56dbdda110d842b8e2f39619ad</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="DELETE">
+        <access>public</access>
+        <description/>
+        <name>Service Request</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:23:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d8a53a56dbdda110d842b8e2f39619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
+        <sys_update_name>wf_workflow_d8a53a56dbdda110d842b8e2f39619ad</sys_update_name>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:23:45</sys_updated_on>
+        <table>sc_request</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Approval Action">50a78fa50a6a803f66d064255f7201a5</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Approved</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:25:09</sys_created_on>
+        <sys_id>ebe5fa56dbdda110d842b8e2f39619ed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:25:10</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Service Request">30753a56dbdda110d842b8e2f39619bf</workflow_version>
+        <x>701</x>
+        <y>229</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=ebe5fa56dbdda110d842b8e2f39619ed"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>ebe5fa56dbdda110d842b8e2f39619ed</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:25:09</sys_created_on>
+        <sys_id>c1f5fe56dbdda110d842b8e2f3961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:25:09</sys_updated_on>
+        <value>approved</value>
+        <variable display_value="Action">50ab35f70a6a803f76d36e1ebaf3639e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>ebe5fa56dbdda110d842b8e2f39619ed</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:25:09</sys_created_on>
+        <sys_id>c1f5fe56dbdda110d842b8e2f3961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:25:09</sys_updated_on>
+        <value>approved</value>
+        <variable display_value="Action">50ab35f70a6a803f76d36e1ebaf3639e</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="Approved">ebe5fa56dbdda110d842b8e2f39619ed</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:25:09</sys_created_on>
+        <sys_id>4df5fe56dbdda110d842b8e2f3961967</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:25:09</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>auto approve</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:24:35</sys_created_on>
+        <sys_id>73b53e56dbdda110d842b8e2f39619fa</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:24:44</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Service Request">30753a56dbdda110d842b8e2f39619bf</workflow_version>
+        <x>441</x>
+        <y>156</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=73b53e56dbdda110d842b8e2f39619fa"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>73b53e56dbdda110d842b8e2f39619fa</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:24:35</sys_created_on>
+        <sys_id>e4d53e56dbdda110d842b8e2f396191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:24:35</sys_updated_on>
+        <value>comments=Request automatically approved^EQ</value>
+        <variable display_value="Set these values">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>73b53e56dbdda110d842b8e2f39619fa</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:24:35</sys_created_on>
+        <sys_id>e4d53e56dbdda110d842b8e2f396191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:24:35</sys_updated_on>
+        <value>comments=Request automatically approved^EQ</value>
+        <variable display_value="Set these values">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="auto approve">73b53e56dbdda110d842b8e2f39619fa</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:24:35</sys_created_on>
+        <sys_id>ecd53e56dbdda110d842b8e2f396191a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:24:35</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:23:45</sys_created_on>
+        <sys_id>9ca5fa56dbdda110d842b8e2f3961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:23:45</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Service Request">30753a56dbdda110d842b8e2f39619bf</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=9ca5fa56dbdda110d842b8e2f3961910"/>
+    <wf_condition action="DELETE">
+        <activity display_value="Begin">9ca5fa56dbdda110d842b8e2f3961910</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:23:45</sys_created_on>
+        <sys_id>6ca5fa56dbdda110d842b8e2f3961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:23:45</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:23:45</sys_created_on>
+        <sys_id>28a5fa56dbdda110d842b8e2f3961912</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:24:43</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Service Request">30753a56dbdda110d842b8e2f39619bf</workflow_version>
+        <x>759</x>
+        <y>98</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=28a5fa56dbdda110d842b8e2f3961912"/>
+    <wf_activity action="DELETE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set requested</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:24:09</sys_created_on>
+        <sys_id>5ea5fa56dbdda110d842b8e2f39619bc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:24:11</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Service Request">30753a56dbdda110d842b8e2f39619bf</workflow_version>
+        <x>207</x>
+        <y>53</y>
+    </wf_activity>
+    <sys_variable_value action="DELETE" query="document_key=5ea5fa56dbdda110d842b8e2f39619bc"/>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>5ea5fa56dbdda110d842b8e2f39619bc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:24:09</sys_created_on>
+        <sys_id>56b53a56dbdda110d842b8e2f39619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:24:09</sys_updated_on>
+        <value>approval=requested^EQ</value>
+        <variable display_value="Set these values">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>wf_activity</document>
+        <document_key>5ea5fa56dbdda110d842b8e2f39619bc</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:24:09</sys_created_on>
+        <sys_id>56b53a56dbdda110d842b8e2f39619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:24:09</sys_updated_on>
+        <value>approval=requested^EQ</value>
+        <variable display_value="Set these values">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="DELETE">
+        <activity display_value="Set requested">5ea5fa56dbdda110d842b8e2f39619bc</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:24:09</sys_created_on>
+        <sys_id>16b53a56dbdda110d842b8e2f39619f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:24:09</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">4df5fe56dbdda110d842b8e2f3961967</condition>
+        <from display_value="Approved">ebe5fa56dbdda110d842b8e2f39619ed</from>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:25:14</sys_created_on>
+        <sys_id>56f5fe56dbdda110d842b8e2f396199f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:25:14</sys_updated_on>
+        <to display_value="End">28a5fa56dbdda110d842b8e2f3961912</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">6ca5fa56dbdda110d842b8e2f3961911</condition>
+        <from display_value="Begin">9ca5fa56dbdda110d842b8e2f3961910</from>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:23:45</sys_created_on>
+        <sys_id>a0a5fa56dbdda110d842b8e2f3961913</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:24:10</sys_updated_on>
+        <to display_value="Set requested">5ea5fa56dbdda110d842b8e2f39619bc</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">16b53a56dbdda110d842b8e2f39619f8</condition>
+        <from display_value="Set requested">5ea5fa56dbdda110d842b8e2f39619bc</from>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:24:10</sys_created_on>
+        <sys_id>aeb53e56dbdda110d842b8e2f39619f8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:24:50</sys_updated_on>
+        <to display_value="auto approve">73b53e56dbdda110d842b8e2f39619fa</to>
+    </wf_transition>
+    <wf_transition action="DELETE">
+        <condition display_value="Always">ecd53e56dbdda110d842b8e2f396191a</condition>
+        <from display_value="auto approve">73b53e56dbdda110d842b8e2f39619fa</from>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:25:12</sys_created_on>
+        <sys_id>b5f5fe56dbdda110d842b8e2f396199e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:25:12</sys_updated_on>
+        <to display_value="Approved">ebe5fa56dbdda110d842b8e2f39619ed</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="DELETE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:23:45</sys_created_on>
+        <sys_id>d0a53a56dbdda110d842b8e2f39619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:23:45</sys_updated_on>
+        <workflow_version display_value="Service Request">30753a56dbdda110d842b8e2f39619bf</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="DELETE" query="workflow=d8a53a56dbdda110d842b8e2f39619ad^sys_id!=30753a56dbdda110d842b8e2f39619bf">
+        <published>false</published>
+    </wf_workflow_version>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</application>
+        <file_path/>
+        <instance_id>fa6b3f95db99291037a0c597059619d8</instance_id>
+        <instance_name>empceverdingutah</instance_name>
+        <name>wf_workflow_d8a53a56dbdda110d842b8e2f39619ad</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="wf_workflow_version"&gt;&lt;wf_workflow_version action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;activity_stages&gt;{"activities":{},"subflows":[],"stages":{},"ends":["28a5fa56dbdda110d842b8e2f3961912"]}&lt;/activity_stages&gt;&lt;after_business_rules&gt;false&lt;/after_business_rules&gt;&lt;checked_out/&gt;&lt;checked_out_by/&gt;&lt;column_renderer display_value="Legacy"&gt;007c2f021b020100adca1e094f0713b4&lt;/column_renderer&gt;&lt;condition/&gt;&lt;condition_type&gt;run_match&lt;/condition_type&gt;&lt;description/&gt;&lt;expected_sequences&gt;9ca5fa56dbdda110d842b8e2f3961910,5ea5fa56dbdda110d842b8e2f39619bc,73b53e56dbdda110d842b8e2f39619fa,ebe5fa56dbdda110d842b8e2f39619ed,28a5fa56dbdda110d842b8e2f3961912&lt;/expected_sequences&gt;&lt;expected_time&gt;1970-01-01 14:00:00&lt;/expected_time&gt;&lt;expected_time_type/&gt;&lt;full_sequences&gt;9ca5fa56dbdda110d842b8e2f3961910,5ea5fa56dbdda110d842b8e2f39619bc,73b53e56dbdda110d842b8e2f39619fa,ebe5fa56dbdda110d842b8e2f39619ed,28a5fa56dbdda110d842b8e2f3961912&lt;/full_sequences&gt;&lt;journal/&gt;&lt;max_activity_count&gt;100&lt;/max_activity_count&gt;&lt;name&gt;Service Request&lt;/name&gt;&lt;not_cacheable&gt;false&lt;/not_cacheable&gt;&lt;on_cancel&gt;&lt;![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]&gt;&lt;/on_cancel&gt;&lt;order&gt;100&lt;/order&gt;&lt;pin_type&gt;set_by_activity&lt;/pin_type&gt;&lt;published&gt;true&lt;/published&gt;&lt;relative_duration/&gt;&lt;requires_ert&gt;true&lt;/requires_ert&gt;&lt;run_multiple&gt;false&lt;/run_multiple&gt;&lt;schedule/&gt;&lt;stage_field/&gt;&lt;stage_order&gt;computed&lt;/stage_order&gt;&lt;start display_value="Begin"&gt;9ca5fa56dbdda110d842b8e2f3961910&lt;/start&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:23:45&lt;/sys_created_on&gt;&lt;sys_id&gt;30753a56dbdda110d842b8e2f39619bf&lt;/sys_id&gt;&lt;sys_mod_count&gt;38&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:25:19&lt;/sys_updated_on&gt;&lt;table&gt;sc_request&lt;/table&gt;&lt;timezone/&gt;&lt;validated&gt;false&lt;/validated&gt;&lt;workflow display_value="Service Request"&gt;d8a53a56dbdda110d842b8e2f39619ad&lt;/workflow&gt;&lt;/wf_workflow_version&gt;&lt;wf_workflow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;description/&gt;&lt;name&gt;Service Request&lt;/name&gt;&lt;preview/&gt;&lt;sys_class_name&gt;wf_workflow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:23:45&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d8a53a56dbdda110d842b8e2f39619ad&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Service Request&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6"&gt;7fa6f53ddb9161102dd8ecebd39619f6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hammerbarn"&gt;7fa6f53ddb9161102dd8ecebd39619f6&lt;/sys_scope&gt;&lt;sys_update_name&gt;wf_workflow_d8a53a56dbdda110d842b8e2f39619ad&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:23:45&lt;/sys_updated_on&gt;&lt;table&gt;sc_request&lt;/table&gt;&lt;template&gt;false&lt;/template&gt;&lt;vars/&gt;&lt;/wf_workflow&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Approval Action"&gt;50a78fa50a6a803f66d064255f7201a5&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;5&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Approved&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage/&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:25:09&lt;/sys_created_on&gt;&lt;sys_id&gt;ebe5fa56dbdda110d842b8e2f39619ed&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:25:10&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="Service Request"&gt;30753a56dbdda110d842b8e2f39619bf&lt;/workflow_version&gt;&lt;x&gt;701&lt;/x&gt;&lt;y&gt;229&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=ebe5fa56dbdda110d842b8e2f39619ed"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;ebe5fa56dbdda110d842b8e2f39619ed&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:25:09&lt;/sys_created_on&gt;&lt;sys_id&gt;c1f5fe56dbdda110d842b8e2f3961967&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:25:09&lt;/sys_updated_on&gt;&lt;value&gt;approved&lt;/value&gt;&lt;variable display_value="Action"&gt;50ab35f70a6a803f76d36e1ebaf3639e&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;ebe5fa56dbdda110d842b8e2f39619ed&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:25:09&lt;/sys_created_on&gt;&lt;sys_id&gt;c1f5fe56dbdda110d842b8e2f3961967&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:25:09&lt;/sys_updated_on&gt;&lt;value&gt;approved&lt;/value&gt;&lt;variable display_value="Action"&gt;50ab35f70a6a803f76d36e1ebaf3639e&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Approved"&gt;ebe5fa56dbdda110d842b8e2f39619ed&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:25:09&lt;/sys_created_on&gt;&lt;sys_id&gt;4df5fe56dbdda110d842b8e2f3961967&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:25:09&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Set Values"&gt;1ca8d7cf0a0a0b265e9a000c2c08248c&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;4&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;auto approve&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage/&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:24:35&lt;/sys_created_on&gt;&lt;sys_id&gt;73b53e56dbdda110d842b8e2f39619fa&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:24:44&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="Service Request"&gt;30753a56dbdda110d842b8e2f39619bf&lt;/workflow_version&gt;&lt;x&gt;441&lt;/x&gt;&lt;y&gt;156&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=73b53e56dbdda110d842b8e2f39619fa"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;73b53e56dbdda110d842b8e2f39619fa&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:24:35&lt;/sys_created_on&gt;&lt;sys_id&gt;e4d53e56dbdda110d842b8e2f396191a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:24:35&lt;/sys_updated_on&gt;&lt;value&gt;comments=Request automatically approved^EQ&lt;/value&gt;&lt;variable display_value="Set these values"&gt;1cb38c8f0a0a0b266fb48e08de35f507&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;73b53e56dbdda110d842b8e2f39619fa&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:24:35&lt;/sys_created_on&gt;&lt;sys_id&gt;e4d53e56dbdda110d842b8e2f396191a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:24:35&lt;/sys_updated_on&gt;&lt;value&gt;comments=Request automatically approved^EQ&lt;/value&gt;&lt;variable display_value="Set these values"&gt;1cb38c8f0a0a0b266fb48e08de35f507&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="auto approve"&gt;73b53e56dbdda110d842b8e2f39619fa&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:24:35&lt;/sys_created_on&gt;&lt;sys_id&gt;ecd53e56dbdda110d842b8e2f396191a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:24:35&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Begin"&gt;c7a5e32c0a0a0b3a002377c24ed8ea76&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;1&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input/&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Begin&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage/&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:23:45&lt;/sys_created_on&gt;&lt;sys_id&gt;9ca5fa56dbdda110d842b8e2f3961910&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:23:45&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width&gt;80&lt;/width&gt;&lt;workflow_version display_value="Service Request"&gt;30753a56dbdda110d842b8e2f39619bf&lt;/workflow_version&gt;&lt;x&gt;20&lt;/x&gt;&lt;y&gt;20&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=9ca5fa56dbdda110d842b8e2f3961910"/&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Begin"&gt;9ca5fa56dbdda110d842b8e2f3961910&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:23:45&lt;/sys_created_on&gt;&lt;sys_id&gt;6ca5fa56dbdda110d842b8e2f3961911&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:23:45&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="End"&gt;c7a66f7d0a0a0b3a004544a6d2f14076&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;2&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input/&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;End&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage/&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:23:45&lt;/sys_created_on&gt;&lt;sys_id&gt;28a5fa56dbdda110d842b8e2f3961912&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:24:43&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width&gt;80&lt;/width&gt;&lt;workflow_version display_value="Service Request"&gt;30753a56dbdda110d842b8e2f39619bf&lt;/workflow_version&gt;&lt;x&gt;759&lt;/x&gt;&lt;y&gt;98&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=28a5fa56dbdda110d842b8e2f3961912"/&gt;&lt;wf_activity action="INSERT_OR_UPDATE"&gt;&lt;activity_definition display_value="Set Values"&gt;1ca8d7cf0a0a0b265e9a000c2c08248c&lt;/activity_definition&gt;&lt;activity_definition_updated&gt;false&lt;/activity_definition_updated&gt;&lt;databus_lookup_id&gt;3&lt;/databus_lookup_id&gt;&lt;height/&gt;&lt;input&gt;{}&lt;/input&gt;&lt;is_parent&gt;false&lt;/is_parent&gt;&lt;name&gt;Set requested&lt;/name&gt;&lt;new_activity_definition/&gt;&lt;notes/&gt;&lt;out_of_date&gt;false&lt;/out_of_date&gt;&lt;parent/&gt;&lt;pinned&gt;false&lt;/pinned&gt;&lt;pinned_version/&gt;&lt;stage/&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:24:09&lt;/sys_created_on&gt;&lt;sys_id&gt;5ea5fa56dbdda110d842b8e2f39619bc&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:24:11&lt;/sys_updated_on&gt;&lt;timeout&gt;1970-01-01 00:00:00&lt;/timeout&gt;&lt;vars/&gt;&lt;width/&gt;&lt;workflow_version display_value="Service Request"&gt;30753a56dbdda110d842b8e2f39619bf&lt;/workflow_version&gt;&lt;x&gt;207&lt;/x&gt;&lt;y&gt;53&lt;/y&gt;&lt;/wf_activity&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=5ea5fa56dbdda110d842b8e2f39619bc"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;5ea5fa56dbdda110d842b8e2f39619bc&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:24:09&lt;/sys_created_on&gt;&lt;sys_id&gt;56b53a56dbdda110d842b8e2f39619f7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:24:09&lt;/sys_updated_on&gt;&lt;value&gt;approval=requested^EQ&lt;/value&gt;&lt;variable display_value="Set these values"&gt;1cb38c8f0a0a0b266fb48e08de35f507&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;wf_activity&lt;/document&gt;&lt;document_key&gt;5ea5fa56dbdda110d842b8e2f39619bc&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:24:09&lt;/sys_created_on&gt;&lt;sys_id&gt;56b53a56dbdda110d842b8e2f39619f7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:24:09&lt;/sys_updated_on&gt;&lt;value&gt;approval=requested^EQ&lt;/value&gt;&lt;variable display_value="Set these values"&gt;1cb38c8f0a0a0b266fb48e08de35f507&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;wf_condition action="INSERT_OR_UPDATE"&gt;&lt;activity display_value="Set requested"&gt;5ea5fa56dbdda110d842b8e2f39619bc&lt;/activity&gt;&lt;condition&gt;true&lt;/condition&gt;&lt;condition_default/&gt;&lt;condition_type&gt;standard&lt;/condition_type&gt;&lt;else_flag&gt;false&lt;/else_flag&gt;&lt;error&gt;false&lt;/error&gt;&lt;event&gt;false&lt;/event&gt;&lt;event_name/&gt;&lt;is_positive&gt;true&lt;/is_positive&gt;&lt;name&gt;Always&lt;/name&gt;&lt;order&gt;0&lt;/order&gt;&lt;short_description/&gt;&lt;skip_during_generate&gt;false&lt;/skip_during_generate&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:24:09&lt;/sys_created_on&gt;&lt;sys_id&gt;16b53a56dbdda110d842b8e2f39619f8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:24:09&lt;/sys_updated_on&gt;&lt;/wf_condition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;4df5fe56dbdda110d842b8e2f3961967&lt;/condition&gt;&lt;from display_value="Approved"&gt;ebe5fa56dbdda110d842b8e2f39619ed&lt;/from&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:25:14&lt;/sys_created_on&gt;&lt;sys_id&gt;56f5fe56dbdda110d842b8e2f396199f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:25:14&lt;/sys_updated_on&gt;&lt;to display_value="End"&gt;28a5fa56dbdda110d842b8e2f3961912&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;6ca5fa56dbdda110d842b8e2f3961911&lt;/condition&gt;&lt;from display_value="Begin"&gt;9ca5fa56dbdda110d842b8e2f3961910&lt;/from&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:23:45&lt;/sys_created_on&gt;&lt;sys_id&gt;a0a5fa56dbdda110d842b8e2f3961913&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:24:10&lt;/sys_updated_on&gt;&lt;to display_value="Set requested"&gt;5ea5fa56dbdda110d842b8e2f39619bc&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;16b53a56dbdda110d842b8e2f39619f8&lt;/condition&gt;&lt;from display_value="Set requested"&gt;5ea5fa56dbdda110d842b8e2f39619bc&lt;/from&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:24:10&lt;/sys_created_on&gt;&lt;sys_id&gt;aeb53e56dbdda110d842b8e2f39619f8&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:24:50&lt;/sys_updated_on&gt;&lt;to display_value="auto approve"&gt;73b53e56dbdda110d842b8e2f39619fa&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_transition action="INSERT_OR_UPDATE"&gt;&lt;condition display_value="Always"&gt;ecd53e56dbdda110d842b8e2f396191a&lt;/condition&gt;&lt;from display_value="auto approve"&gt;73b53e56dbdda110d842b8e2f39619fa&lt;/from&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:25:12&lt;/sys_created_on&gt;&lt;sys_id&gt;b5f5fe56dbdda110d842b8e2f396199e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:25:12&lt;/sys_updated_on&gt;&lt;to display_value="Approved"&gt;ebe5fa56dbdda110d842b8e2f39619ed&lt;/to&gt;&lt;/wf_transition&gt;&lt;wf_estimated_runtime_config action="INSERT_OR_UPDATE"&gt;&lt;estimated_run_time/&gt;&lt;no_of_data_points&gt;1&lt;/no_of_data_points&gt;&lt;percentage_threshold_ert&gt;20&lt;/percentage_threshold_ert&gt;&lt;sys_created_by&gt;glenn.guzzo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-03 04:23:45&lt;/sys_created_on&gt;&lt;sys_id&gt;d0a53a56dbdda110d842b8e2f39619ad&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;glenn.guzzo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-03 04:23:45&lt;/sys_updated_on&gt;&lt;workflow_version display_value="Service Request"&gt;30753a56dbdda110d842b8e2f39619bf&lt;/workflow_version&gt;&lt;/wf_estimated_runtime_config&gt;&lt;wf_workflow_version action="update_multiple" query="workflow=d8a53a56dbdda110d842b8e2f39619ad^sys_id!=30753a56dbdda110d842b8e2f39619bf"&gt;&lt;published&gt;false&lt;/published&gt;&lt;/wf_workflow_version&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1404040300</payload_hash>
+        <record_name>Service Request</record_name>
+        <reverted_from/>
+        <source>2b0fa9d6dbd9a110d842b8e2f3961948</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:25:19</sys_created_on>
+        <sys_id>dbf53296dbdda110d842b8e2f39619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186a5b79d690000001</sys_recorded_at>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:25:19</sys_updated_on>
+        <type>Workflow</type>
+        <update_guid>53f5329651dda110ddc13ed0934b9db1</update_guid>
+        <update_guid_history>53f5329651dda110ddc13ed0934b9db1:-1404040300</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Request">fda73ed6dbdda110d842b8e2f396196b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>glenn.guzzo</sys_created_by>
+        <sys_created_on>2023-03-03 04:32:35</sys_created_on>
+        <sys_db_object display_value="" name="wf_workflow">wf_workflow</sys_db_object>
+        <sys_id>74d2abddafb342a0966c56579c6aa819</sys_id>
+        <sys_metadata>d8a53a56dbdda110d842b8e2f39619ad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Request</sys_name>
+        <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
+        <sys_scope_delete display_value="">6df20bf35f44466da2ae9416c41cb741</sys_scope_delete>
+        <sys_update_name>wf_workflow_d8a53a56dbdda110d842b8e2f39619ad</sys_update_name>
+        <sys_update_version display_value="wf_workflow_d8a53a56dbdda110d842b8e2f39619ad">dbf53296dbdda110d842b8e2f39619b1</sys_update_version>
+        <sys_updated_by>glenn.guzzo</sys_updated_by>
+        <sys_updated_on>2023-03-03 04:32:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

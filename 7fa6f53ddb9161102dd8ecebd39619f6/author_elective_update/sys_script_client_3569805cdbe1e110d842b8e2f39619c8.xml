@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>estimated_delivery</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages>hb_request_delivery_date_validation_failed</messages>
+        <name>(HB) Validate estimated delivery date</name>
+        <order>1000</order>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	
+	var newDate = newValue;
+
+    var checkDateGA = new GlideAjax('HBCatalogAjax');
+    checkDateGA.addParam('sysparm_name', 'compareDates');
+    checkDateGA.addParam('sysparm_compare', newDate);
+    checkDateGA.getXMLAnswer(validateNewDate);
+		
+		
+	function validateNewDate(answer) {
+        if (answer < 0) {
+            g_form.setValue('estimated_delivery', '');
+            g_form.showFieldMsg('estimated_delivery', getMessage('hb_request_delivery_date_validation_failed'), 'error', true);
+        }
+    }
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-08 21:00:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3569805cdbe1e110d842b8e2f39619c8</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>(HB) Validate estimated delivery date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
+        <sys_update_name>sys_script_client_3569805cdbe1e110d842b8e2f39619c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-14 07:24:03</sys_updated_on>
+        <table>sc_req_item</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</application>
+        <file_path/>
+        <instance_id>fa6b3f95db99291037a0c597059619d8</instance_id>
+        <instance_name>empceverdingutah</instance_name>
+        <name>sys_script_client_3569805cdbe1e110d842b8e2f39619c8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;estimated_delivery&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages&gt;hb_request_delivery_date_validation_failed&lt;/messages&gt;&lt;name&gt;(HB) Validate estimated delivery date&lt;/name&gt;&lt;order&gt;1000&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	
+	var newDate = newValue;
+
+    var checkDateGA = new GlideAjax('HBCatalogAjax');
+    checkDateGA.addParam('sysparm_name', 'compareDates');
+    checkDateGA.addParam('sysparm_compare', newDate);
+    checkDateGA.getXMLAnswer(validateNewDate);
+		
+		
+	function validateNewDate(answer) {
+        if (answer &lt; 0) {
+            g_form.setValue('estimated_delivery', '');
+            g_form.showFieldMsg('estimated_delivery', getMessage('hb_request_delivery_date_validation_failed'), 'error', true);
+        }
+    }
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-08 21:00:29&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3569805cdbe1e110d842b8e2f39619c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;(HB) Validate estimated delivery date&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6"&gt;7fa6f53ddb9161102dd8ecebd39619f6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hammerbarn"&gt;7fa6f53ddb9161102dd8ecebd39619f6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_3569805cdbe1e110d842b8e2f39619c8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-14 07:24:03&lt;/sys_updated_on&gt;&lt;table&gt;sc_req_item&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1642813680</payload_hash>
+        <record_name>(HB) Validate estimated delivery date</record_name>
+        <reverted_from/>
+        <source>04b1d44adb5961102dd8ecebd396196a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-14 07:24:03</sys_created_on>
+        <sys_id>7868cccedbe9a1102dd8ecebd396198a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186df01347d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-14 07:24:03</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>7068ccce92e9a110b6ab961c9ee0ba8a</update_guid>
+        <update_guid_history>7068ccce92e9a110b6ab961c9ee0ba8a:1642813680,10f74cce00e9a110d6cf826c413d4ed5:1396857492,0275c84e69e9a110c651cd31a7326f17:-24701034,93dfcef58ba5a110fad74221ff09ca70:763258931,d18c8675cea5a110363d33a964150b18:1601303737,517c827595a5a1107bbea0bb8a291e51:1148932569,834cce3525a5a11041209c5749485763:2147228337,ed6bc23507a5a110be0bf8fb0afa8c17:1995930339,453b023554a5a1106efc28e081c939dd:662221458,2b1b0ef19ea5a1106e4a440898b9cc88:489946442,30ca4af145a5a110f4ea4f4e324a916a:-1577071053,029ac6f1dea5a110b6cc9abb56af4f31:-1392929600,8d7a46f12fa5a1103bd62a495f9497c1:-438702562,0c5a42f11ba5a1100dd47d8a8938fb85:106709943,871aceb1e6a5a1103a3575a53fef551f:1059138581,d4a8ca7152a5a110089a6c5e64078be7:848896565,f4684a7198a5a110948e88376b277f0d:-899447704,b4a78e315aa5a110d1c0948c41cb10b4:-1958072596,47270a3125a5a1103c19cfef69a1b623:-14562035,a54682fdd065a110b75f56304a97033f:538837275,75b9845c1fe1e110b7ae32ec4e936651:2044181598</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-18 23:12:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>21ce1deaeb394cf5a7bad23cc7214a81</sys_id>
+        <sys_metadata>3569805cdbe1e110d842b8e2f39619c8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>(HB) Validate estimated delivery date</sys_name>
+        <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
+        <sys_parent display_value="Sc Req Item">807de9e8a9a0211076daa554cb57d90a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
+        <sys_scope_delete display_value="">6df20bf35f44466da2ae9416c41cb741</sys_scope_delete>
+        <sys_update_name>sys_script_client_3569805cdbe1e110d842b8e2f39619c8</sys_update_name>
+        <sys_update_version display_value="sys_script_client_3569805cdbe1e110d842b8e2f39619c8">7868cccedbe9a1102dd8ecebd396198a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-18 23:12:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

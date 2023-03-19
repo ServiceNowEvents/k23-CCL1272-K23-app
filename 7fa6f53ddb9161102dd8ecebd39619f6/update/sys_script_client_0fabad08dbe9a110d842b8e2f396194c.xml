@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages>hb_vip_order_form_message</messages>
+        <name>(HB) VIP Order</name>
+        <order>100</order>
+        <script><![CDATA[function onLoad() {
+
+    try {
+
+        var user = g_form.getValue('requested_for');
+		
+		//if(g_form.getValue('estimated_delivery_date')) {
+			var estDelivery = g_form.getValue('estimated_delivery');
+		//} else throw "Unable to retrieve estimated delivery date";
+		
+        var days = -3;
+
+        var dateGA = new GlideAjax('HBCatalogAjax');
+        dateGA.addParam('sysparm_name', 'reduceDueDateVIP');
+        dateGA.addParam('sysparm_user', user);
+        dateGA.addParam('sysparm_date', estDelivery);
+        dateGA.addParam('sysparm_days', days);
+        dateGA.getXMLAnswer(updateEstimatedDate);
+
+        function updateEstimatedDate(answer) {
+            if (answer) {
+				var vipGM = new GlideModal("glide_info", true, 600);
+				vipGM.setTitle("VIP Alert!");
+				vipGM.setPreference("title", getMessage('hb_vip_order_form_message'));
+				vipGM.setPreference("onPromptComplete", function() {g_form.setValue('estimated_delivery', answer);});
+				vipGM.render();
+            }
+        }
+    } catch (e) {
+        if (g_user.hasRole('admin')) {
+            g_form.addInfoMessage('Business Rule >>> (HB) VIP Order >>> ' + e);
+        }
+        console.log('***ERROR*** >>> Business Rule >>> (HB) VIP Order >>> ' + e);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-08 09:34:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0fabad08dbe9a110d842b8e2f396194c</sys_id>
+        <sys_mod_count>81</sys_mod_count>
+        <sys_name>(HB) VIP Order</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
+        <sys_update_name>sys_script_client_0fabad08dbe9a110d842b8e2f396194c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-14 07:20:51</sys_updated_on>
+        <table>sc_req_item</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

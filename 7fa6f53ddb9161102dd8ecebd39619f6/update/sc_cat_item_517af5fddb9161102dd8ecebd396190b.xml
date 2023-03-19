@@ -14,7 +14,7 @@
         <description><![CDATA[<p>The Hammerbarn Compocast Hammer is constructed from non sparking, Uni-Cast, non-ferrous materials. It features soft faces that prevent marring, with no exposed metal on the face, head or shaft. The dead-blow function uses steel shot to eliminate bounce back.</p>]]></description>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
-        <flow_designer_flow display_value="(HB) Hammerbarn Order">7b71f5f5db9161102dd8ecebd396191c</flow_designer_flow>
+        <flow_designer_flow display_value="(HB) Hammer order flow">88b55c3fdb596110d842b8e2f396193b</flow_designer_flow>
         <fulfillment_automation_level>unspecified</fulfillment_automation_level>
         <group/>
         <hide_sp>false</hide_sp>
@@ -31,13 +31,13 @@
         <name>Hammer</name>
         <no_attachment_v2>true</no_attachment_v2>
         <no_cart>false</no_cart>
-        <no_cart_v2>false</no_cart_v2>
+        <no_cart_v2>true</no_cart_v2>
         <no_delivery_time_v2>false</no_delivery_time_v2>
         <no_order>false</no_order>
         <no_order_now>false</no_order_now>
         <no_proceed_checkout>false</no_proceed_checkout>
         <no_quantity>false</no_quantity>
-        <no_quantity_v2>false</no_quantity_v2>
+        <no_quantity_v2>true</no_quantity_v2>
         <no_search>false</no_search>
         <no_wishlist_v2>false</no_wishlist_v2>
         <omit_price>false</omit_price>
@@ -46,11 +46,11 @@
         <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
         <picture>948b3531dbd161102dd8ecebd39619f2</picture>
         <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=517af5fddb9161102dd8ecebd396190b&amp;sysparm_preview=true", "summary");</preview>
-        <price>67.7231</price>
+        <price>66.9208</price>
         <published_ref/>
         <recurring_frequency/>
         <recurring_price>0</recurring_price>
-        <request_method/>
+        <request_method>request</request_method>
         <roles/>
         <sc_catalogs>f78aad71db9161102dd8ecebd39619f9</sc_catalogs>
         <sc_ic_item_staging/>
@@ -64,14 +64,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-01 10:49:23</sys_created_on>
         <sys_id>517af5fddb9161102dd8ecebd396190b</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Hammer</sys_name>
         <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
         <sys_update_name>sc_cat_item_517af5fddb9161102dd8ecebd396190b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-01 10:54:52</sys_updated_on>
+        <sys_updated_on>2023-03-07 08:57:09</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>

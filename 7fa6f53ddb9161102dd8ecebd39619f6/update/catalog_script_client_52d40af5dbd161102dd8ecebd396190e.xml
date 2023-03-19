@@ -18,19 +18,31 @@
         <name>(HB) Set user location</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-	
-    if (isLoading || newValue == '') {
+
+	// if the form is just loading or the order type is empty or the order type is not delivery we don't need to
+	// fetch the delivery address
+    if (isLoading || newValue == '' || g_form.getValue('order_type') != 'delivery') {
         return;
     }
+	
+	var requestedBy = g_form.getValue('requested');
 
-    var locGA = new GlideAjax('HB_Catalog_Ajax)');
-    locGA.addParam('getUserLocation');
-    locGA.addParam(g_form.getValue('location'));
-    locGA.getXMLAnswer(function(answer) {
+    var locGA = new GlideAjax('HBCatalogAjax');
+    locGA.addParam('sysparm_name', 'getUserLocation');
+    locGA.addParam('sysparm_userID', requestedBy);
+    locGA.getXMLAnswer(populateUserLocation);
+
+    function populateUserLocation(answer) {
+
+        var clearValue;
+		// if there is a user location to populate populate it
         if (answer) {
-            g_form.setValue('location', answer);
+			var returnData = JSON.parse(answer);
+            g_form.setValue('delivery_address', returnData.sys_id, returnData.name);
+        } else {
+            g_form.setValue('delivery_address', clearValue);
         }
-    });
+    }
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>Bandit.Heeler</sys_created_by>
@@ -38,15 +50,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>52d40af5dbd161102dd8ecebd396190e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name>(HB) Set user location</sys_name>
         <sys_overrides/>
         <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
         <sys_update_name>catalog_script_client_52d40af5dbd161102dd8ecebd396190e</sys_update_name>
-        <sys_updated_by>Bandit.Heeler</sys_updated_by>
-        <sys_updated_on>2023-03-01 11:41:47</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-18 23:25:07</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

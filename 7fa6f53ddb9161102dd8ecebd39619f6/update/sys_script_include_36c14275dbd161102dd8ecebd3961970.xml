@@ -1,30 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
+        <access>public</access>
         <active>true</active>
-        <api_name>global.HB_Catalog_Ajax</api_name>
+        <api_name>global.HBCatalogAjax</api_name>
         <caller_access/>
-        <client_callable>false</client_callable>
+        <client_callable>true</client_callable>
         <description/>
-        <name>HB_Catalog_Ajax</name>
-        <script><![CDATA[var HB_Catalog_Ajax = Class.create();
-HB_Catalog_Ajax.prototype = {
-    initialize: function() {
+        <name>HBCatalogAjax</name>
+        <script><![CDATA[var HBCatalogAjax = Class.create();
+HBCatalogAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getUserLocation: function() {
+
+        try {
+
+            var user = this.getParameter('sysparm_userID');
+
+            var userGR = new GlideRecord('sys_user');
+            if (userGR.get(user)) {
+                gs.debug('user ' + userGR.getValue('location'));
+                var results = {
+                    "sys_id": userGR.getValue('location'),
+                    "name": userGR.getDisplayValue('location')
+                };
+                return JSON.stringify(results);
+            }
+        } catch (e) {
+            if (gs.isInteractive() && gs.hasRole('admin')) {
+                gs.addInfoMessage('HBCatalogAjax: getUserLocation - ' + e);
+            }
+            gs.error(e);
+        }
     },
 
-    type: 'HB_Catalog_Ajax'
-};]]></script>
+    reduceDueDateVIP: function() {
+
+        var days = this.getParameter('sysparm_days');
+        var date = this.getParameter('sysparm_date');
+        var user = this.getParameter('sysparm_user');
+
+        if (this._checkIsVIP(user)) {
+            return this._subtractDaysFromDateTime(date, days);
+        }
+
+    },
+
+    _checkIsVIP: function(user) {
+        var userGR = new GlideRecord('sys_user');
+        if (userGR.get(user)) {
+            if (userGR.getValue('vip') == true) {
+                return true;
+            } else return false;
+        } else return false;
+
+    },
+
+    _subtractDaysFromDateTime: function(date, days) {
+
+        var gdt = new GlideDateTime(date);
+        gdt.addDays(days);
+
+        return gdt;
+    },
+
+    compareDates: function() {
+
+        //Compare any date with current date
+        var compare_start_date = new GlideDate();
+        var compareStrDate = this.getParameter('sysparm_compare');
+        compare_start_date.setValue(compareStrDate);
+
+        var endDate = new GlideDate();
+        endDate.setValue(compare_start_date);
+
+        var date = new GlideDateTime(gs.nowDateTime());
+        var getDate = date.getDate().getByFormat("dd/MM/yyyy");
+        var diff = gs.dateDiff(getDate, compareStrDate, true) / 86400;
+
+        return gs.dateDiff(getDate, compareStrDate, true) / 86400;
+    },
+
+    nowDateTime: function() {
+        return gs.nowDateTime();
+    },
+
+    type: 'HBCatalogAjax'
+});]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-03-01 11:20:45</sys_created_on>
         <sys_id>36c14275dbd161102dd8ecebd3961970</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>HB_Catalog_Ajax</sys_name>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>HBCatalogAjax</sys_name>
         <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
         <sys_update_name>sys_script_include_36c14275dbd161102dd8ecebd3961970</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-01 11:20:45</sys_updated_on>
+        <sys_updated_on>2023-03-13 22:23:32</sys_updated_on>
     </sys_script_include>
 </record_update>

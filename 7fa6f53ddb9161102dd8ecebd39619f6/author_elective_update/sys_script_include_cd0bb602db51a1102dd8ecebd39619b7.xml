@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.HBCatalogUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>HBCatalogUtils</name>
+        <script><![CDATA[var HBCatalogUtils = Class.create();
+HBCatalogUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	getUserLocation: function() {
+		console.log('into script include');
+        try {
+            var user = this.getParameter('sysparm_user');
+
+            var userGR = new GlideRecord('sys_user');
+            if (userGR.get(user)) {
+                var results = {
+                    "sys_id": userGR.getValue('location'),
+                    "name": userGR.getDisplayValue('location')
+                };
+                return JSON.stringify(results);
+            }
+        } catch (e) {
+            if (gs.isInteractive() && gs.hasRole('admin')) {
+                gs.addInfoMessage('HBCatalogAjax: getUserLocation - ' + e);
+            }
+            gs.error(e);
+        }
+    },
+
+    type: 'HBCatalogUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-02 10:11:11</sys_created_on>
+        <sys_id>cd0bb602db51a1102dd8ecebd39619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HBCatalogUtils</sys_name>
+        <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
+        <sys_update_name>sys_script_include_cd0bb602db51a1102dd8ecebd39619b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-02 10:11:11</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</application>
+        <file_path/>
+        <instance_id>fa6b3f95db99291037a0c597059619d8</instance_id>
+        <instance_name>empceverdingutah</instance_name>
+        <name>sys_script_include_cd0bb602db51a1102dd8ecebd39619b7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.HBCatalogUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;HBCatalogUtils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var HBCatalogUtils = Class.create();
+HBCatalogUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	getUserLocation: function() {
+		console.log('into script include');
+        try {
+            var user = this.getParameter('sysparm_user');
+
+            var userGR = new GlideRecord('sys_user');
+            if (userGR.get(user)) {
+                var results = {
+                    "sys_id": userGR.getValue('location'),
+                    "name": userGR.getDisplayValue('location')
+                };
+                return JSON.stringify(results);
+            }
+        } catch (e) {
+            if (gs.isInteractive() &amp;&amp; gs.hasRole('admin')) {
+                gs.addInfoMessage('HBCatalogAjax: getUserLocation - ' + e);
+            }
+            gs.error(e);
+        }
+    },
+
+    type: 'HBCatalogUtils'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-03-02 10:11:11&lt;/sys_created_on&gt;&lt;sys_id&gt;cd0bb602db51a1102dd8ecebd39619b7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;HBCatalogUtils&lt;/sys_name&gt;&lt;sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6"&gt;7fa6f53ddb9161102dd8ecebd39619f6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hammerbarn"&gt;7fa6f53ddb9161102dd8ecebd39619f6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_cd0bb602db51a1102dd8ecebd39619b7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-03-02 10:11:11&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>879173155</payload_hash>
+        <record_name>HBCatalogUtils</record_name>
+        <reverted_from/>
+        <source>04b1d44adb5961102dd8ecebd396196a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-02 10:11:12</sys_created_on>
+        <sys_id>d89bfe02db51a1102dd8ecebd39619c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186a1cdebce0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-02 10:11:12</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>109bfe024251a110a6ae8df78a5469c9</update_guid>
+        <update_guid_history>109bfe024251a110a6ae8df78a5469c9:879173155</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-02 10:12:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>4b7d78b6f7514868a2715448e80e45a4</sys_id>
+        <sys_metadata>cd0bb602db51a1102dd8ecebd39619b7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HBCatalogUtils</sys_name>
+        <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
+        <sys_scope_delete display_value="">6df20bf35f44466da2ae9416c41cb741</sys_scope_delete>
+        <sys_update_name>sys_script_include_cd0bb602db51a1102dd8ecebd39619b7</sys_update_name>
+        <sys_update_version display_value="sys_script_include_cd0bb602db51a1102dd8ecebd39619b7">d89bfe02db51a1102dd8ecebd39619c9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-02 10:12:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
