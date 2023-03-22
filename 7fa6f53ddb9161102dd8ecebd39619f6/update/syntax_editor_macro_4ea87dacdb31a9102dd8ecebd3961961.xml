@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="syntax_editor_macro">
+    <syntax_editor_macro action="INSERT_OR_UPDATE">
+        <comments/>
+        <name>pickupga</name>
+        <sys_class_name>syntax_editor_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-22 09:59:36</sys_created_on>
+        <sys_id>4ea87dacdb31a9102dd8ecebd3961961</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>pickupga</sys_name>
+        <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
+        <sys_update_name>syntax_editor_macro_4ea87dacdb31a9102dd8ecebd3961961</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-22 10:00:47</sys_updated_on>
+        <text>function onChange(control, oldValue, newValue, isLoading) {&#13;
+&#13;
+    // if the form is just loading or the order type is empty or the order type is not delivery we don't need to&#13;
+    // fetch the delivery address&#13;
+    if (isLoading || newValue == '' || g_form.getValue('order_type') != 'delivery') {&#13;
+        return;&#13;
+    }&#13;
+&#13;
+    var requestedBy = g_form.getValue('requested');&#13;
+&#13;
+    var locGA = new GlideAjax('HBCatalogAjax');&#13;
+    locGA.addParam('sysparm_name', 'getUserLocation');&#13;
+    locGA.addParam('sysparm_userID', requestedBy);&#13;
+    locGA.getXMLAnswer(populateUserLocation);&#13;
+&#13;
+    function populateUserLocation(answer) {&#13;
+&#13;
+        var clearValue;&#13;
+        // if there is a user location to populate populate it&#13;
+        if (answer) {&#13;
+            var returnData = JSON.parse(answer);&#13;
+            g_form.setValue('delivery_address', returnData.sys_id, returnData.name);&#13;
+        } else {&#13;
+            g_form.setValue('delivery_address', clearValue);&#13;
+        }&#13;
+    }&#13;
+}</text>
+    </syntax_editor_macro>
+</record_update>
