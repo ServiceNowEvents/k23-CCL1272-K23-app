@@ -12,13 +12,9 @@
         <order>100</order>
         <script><![CDATA[function onLoad() {
 
-    try {
-
         var user = g_form.getValue('requested_for');
 		
-		//if(g_form.getValue('estimated_delivery_date')) {
-			var estDelivery = g_form.getValue('estimated_delivery');
-		//} else throw "Unable to retrieve estimated delivery date";
+		var estDelivery = g_form.getValue('estimated_delivery_date');
 		
         var days = -3;
 
@@ -38,12 +34,6 @@
 				vipGM.render();
             }
         }
-    } catch (e) {
-        if (g_user.hasRole('admin')) {
-            g_form.addInfoMessage('Business Rule >>> (HB) VIP Order >>> ' + e);
-        }
-        console.log('***ERROR*** >>> Business Rule >>> (HB) VIP Order >>> ' + e);
-    }
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -51,7 +41,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0fabad08dbe9a110d842b8e2f396194c</sys_id>
-        <sys_mod_count>81</sys_mod_count>
+        <sys_mod_count>86</sys_mod_count>
         <sys_name>(HB) VIP Order</sys_name>
         <sys_overrides/>
         <sys_package display_value="Hammerbarn" source="7fa6f53ddb9161102dd8ecebd39619f6">7fa6f53ddb9161102dd8ecebd39619f6</sys_package>
@@ -59,7 +49,7 @@
         <sys_scope display_value="Hammerbarn">7fa6f53ddb9161102dd8ecebd39619f6</sys_scope>
         <sys_update_name>sys_script_client_0fabad08dbe9a110d842b8e2f396194c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-03-14 07:20:51</sys_updated_on>
+        <sys_updated_on>2023-03-30 01:42:04</sys_updated_on>
         <table>sc_req_item</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>
